@@ -19,7 +19,9 @@ app.get("/", (req, res) => {
 app.post("/recipe", (req, res) => {
 
   console.log(req.body);
+  console.log(recipeJSON);
   const data=JSON.parse(recipeJSON);
+  console.log(data);
   let tac={};
   if(req.body.choice=="chicken")
     tac=data[0];
